@@ -2,9 +2,9 @@
 
 namespace HiCharly\LaravelDepshield\Tests;
 
+use HiCharly\LaravelDepshield\LaravelDepshieldServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use HiCharly\LaravelDepshield\LaravelDepshieldServiceProvider;
 
 class TestCase extends Orchestra
 {

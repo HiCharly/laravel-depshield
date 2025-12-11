@@ -2,9 +2,9 @@
 
 namespace HiCharly\LaravelDepshield;
 
+use HiCharly\LaravelDepshield\Commands\LaravelDepshieldCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use HiCharly\LaravelDepshield\Commands\LaravelDepshieldCommand;
 
 class LaravelDepshieldServiceProvider extends PackageServiceProvider
 {
