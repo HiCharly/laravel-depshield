@@ -20,6 +20,8 @@ class ComposerAudit extends Command
 
         Storage::disk(config('depshield.disk_name'))->put(config('depshield.storage_path').'/composerAudit.json', $process->getOutput());
 
+        $this->info('Composer audit command executed successfully.');
+
         return self::SUCCESS;
     }
 }

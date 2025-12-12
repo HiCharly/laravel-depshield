@@ -3,6 +3,7 @@
 namespace HiCharly\LaravelDepshield;
 
 use HiCharly\LaravelDepshield\Commands\ComposerAudit;
+use HiCharly\LaravelDepshield\Commands\ComposerShow;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -19,6 +20,7 @@ class LaravelDepshieldServiceProvider extends PackageServiceProvider
             ->name('laravel-depshield')
             ->hasConfigFile()
             ->hasViews()
-            ->hasCommand(ComposerAudit::class);
+            ->hasCommand(ComposerAudit::class)
+            ->hasCommand(ComposerShow::class);
     }
 }
